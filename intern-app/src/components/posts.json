@@ -1,4 +1,4 @@
-[
+{"Post":[
     {
         "article_id":1,
         "main_image":"https://images.dog.ceo/breeds/shiba/shiba-11.jpg"
@@ -35,4 +35,4 @@
         "article_id":9,
         "main_image":"https://images.dog.ceo/breeds/shiba/shiba-11.jpg"
     }
-]
+]}
