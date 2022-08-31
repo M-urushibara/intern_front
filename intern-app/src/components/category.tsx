@@ -20,8 +20,9 @@ type Post = {
     console.log(datas)
   
     return(
-      <div>
-        <Grid  >
+      <div >
+        <Grid  className="categories">
+            <h2>探す</h2>
         {datas.map((data :Post,index) => (
                   <Grid className="categorynames">{data.id}</Grid>
         ))}

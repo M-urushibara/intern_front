@@ -24,10 +24,10 @@ export const TimeLine = () => {
 
    
    return (
-     <div className="App">
-       <ImageList  sx={{ width: 1, height: 1}} cols={3}>
+     <div className="Apple">
+       <ImageList sx={{ width: 1, height: 1}} cols={3}>
          {datas.map((data :Post,index) => (
-          <ImageListItem style={{ margin:"30px"}}>
+          <ImageListItem style={{ margin:"10%"}}>
             <img src={data.url}/>
           </ImageListItem>
          ))}

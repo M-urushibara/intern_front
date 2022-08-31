@@ -22,7 +22,9 @@ type Post = {
   
     return(
       <div>
-        <Grid  >
+        
+        <Grid  className="users" >
+            <h2>ユーザー</h2>
         {datas.map((data :Post,index) => (
                   <Grid className="usernames">{data.username}</Grid>
         ))}

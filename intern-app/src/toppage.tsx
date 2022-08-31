@@ -4,7 +4,7 @@ import {Header} from './components/header'
 import {Sidemenue} from './components/sidemenue'
 import './components/App.css'
 
-export const App = () =>{
+export const TopPage = () =>{
   return (
     <div >
         <Header/>
@@ -19,3 +19,4 @@ export const App = () =>{
     </div>
   );
 }
+
