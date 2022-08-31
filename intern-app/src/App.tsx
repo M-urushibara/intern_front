@@ -3,13 +3,13 @@ import Post from './posts.json'
 import axios from 'axios';
 
 type Post = {
-  name:string;
+  url:string;
   /*article_id:number;
   main_image:string;*/
 }
 
 export const App = () => {
-  const urlAPI = 'https://jsonplaceholder.typicode.com/users';
+  const urlAPI = 'https://jsonplaceholder.typicode.com/photos';
    const [datas, setDatas] = useState([]);
    console.log(axios.defaults.baseURL)
    useEffect( () => {
@@ -17,15 +17,24 @@ export const App = () => {
        setDatas(response.data)).catch(error => console.log(error))
    },[])
    console.log(datas)
+
+  const inline ={
+    display:"inline-block",
+    width:"33%",
+    height:"20%"
+  };
+
    
    return (
      <div className="App">
        <h1>Axios Test</h1>
-       <ul>
+       
          {datas.map((data :Post,index) => (
-           <li key={index}>{data.name}</li>
+          
+            <img style={inline} src={data.url}></img>
+          
          ))}
-       </ul>
+      
      </div>
    );
 
