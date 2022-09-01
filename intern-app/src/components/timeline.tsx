@@ -7,15 +7,15 @@ import {Listen} from './listen'
 
 
 type Post = {
-  /*article_id:number;
+  article_id:number;
   product_image_path:string;
-  created_at:string;*/
-  id:number;
-  url:string;
+  created_at:string;
+  /*id:number;
+  url:string;*/
 } 
 
 export const TimeLine = () => {
-  const urlAPI = 'https://jsonplaceholder.typicode.com/photos';
+  const urlAPI = 'http://localhost:3001/articles/timeline/recommend';
    const [datas, setDatas] = useState([]);
    console.log(axios.defaults.baseURL)
    useEffect( () => {
@@ -29,8 +29,8 @@ export const TimeLine = () => {
      <div className="Apple">
        <ImageList sx={{ width: 1, height: 1}} cols={3}>
          {datas.map((data :Post,index) => (
-          <ImageListItem key={data.id} style={{ margin:"10%"}}>
-            <a href=''> <img  className="img" style={{width:"100%"}} src={data.url}/> </a>
+          <ImageListItem key={data.article_id} style={{ margin:"10%"}}>
+            <a href=''> <img  className="img" style={{width:"100%"}} src={data.product_image_path}/> </a>
           </ImageListItem>
          ))}
       </ImageList>
