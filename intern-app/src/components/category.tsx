@@ -24,7 +24,7 @@ type Post = {
         <Grid  className="categories">
             <h2>探す</h2>
         {datas.map((data :Post,index) => (
-                  <Grid className="categorynames">{data.id}</Grid>
+            <a href='' className="textdeco">  <Grid key={data.id} className="categorynames">{data.id}</Grid> </a>
         ))}
         </Grid>
       </div>

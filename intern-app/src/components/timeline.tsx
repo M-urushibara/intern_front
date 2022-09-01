@@ -1,16 +1,18 @@
 import React,{ useState, useEffect } from 'react';
 import axios from 'axios';
-import { ImageList, ImageListItem} from '@mui/material';
+import { ImageList, ImageListItem, Button} from '@mui/material';
 import {Listen} from './listen' 
 //json取得部分と表示させる部分を別コンポーネントにしたかった
 
 
 
 type Post = {
-  url:string;
   /*article_id:number;
-  main_image:string;*/
-}
+  product_image_path:string;
+  created_at:string;*/
+  id:number;
+  url:string;
+} 
 
 export const TimeLine = () => {
   const urlAPI = 'https://jsonplaceholder.typicode.com/photos';
@@ -27,8 +29,8 @@ export const TimeLine = () => {
      <div className="Apple">
        <ImageList sx={{ width: 1, height: 1}} cols={3}>
          {datas.map((data :Post,index) => (
-          <ImageListItem style={{ margin:"10%"}}>
-            <img src={data.url}/>
+          <ImageListItem key={data.id} style={{ margin:"10%"}}>
+            <a href=''> <img  className="img" style={{width:"100%"}} src={data.url}/> </a>
           </ImageListItem>
          ))}
       </ImageList>
@@ -36,4 +38,7 @@ export const TimeLine = () => {
    );
 }
 
+
+//keyの処理してない
+//画像クリックでイベント実装、idを渡せばよい？？
 //作成時間昇順に並べる？

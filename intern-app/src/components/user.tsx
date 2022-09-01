@@ -26,9 +26,9 @@ type Post = {
         <Grid  className="users" >
             <h2>ユーザー</h2>
         {datas.map((data :Post,index) => (
-                  <Grid className="usernames">{data.username}</Grid>
+            <Grid className="usernames">{data.username}</Grid> 
         ))}
-              </Grid>
+        </Grid>
       </div>
     );
   }
