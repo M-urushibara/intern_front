@@ -1,0 +1,67 @@
+p.ttl {
+    font-weight: normal;
+    font-size: 12px;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0;
+  }
+  button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    background: #ccc;
+    padding: 4px 20px;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  .app {
+    background: #ccc;
+    padding: 10px;
+  }
+  .header {
+    background: #dbffee;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .header a {
+    color: #2d2d2d;
+    text-decoration: none;
+  }
+  .header a.active {
+    font-weight: bold;
+    border-bottom: 1px solid #2d2d2d;
+  }
+  .top_page {
+    background: #f9daff;
+    padding: 10px;
+  }
+  .about_page {
+    background: #ffebda;
+    padding: 10px;
+  }
+  .item_page {
+    background: #d9c9ff;
+    padding: 10px;
+  }
+  .item_page_product {
+    background: #a593cf;
+    padding: 10px;
+  }
+  .Page404 {
+    background: #e5daff;
+    padding: 10px;
+  }
+  
