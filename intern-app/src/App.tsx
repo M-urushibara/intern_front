@@ -1,27 +1,4 @@
 import React from 'react';
-import {TimeLine} from './timeline'
-import {Header} from './header'
-import {Sidemenue} from './sidemenue'
-
-import './App.css'
-
-
-/*export const App = () =>{
-  return (
-    <div >
-        <Header/>
-      <main className="main">
-        <div className = "item">
-          <Sidemenue/>
-        </div>
-        <div className = "item">
-          <TimeLine/>
-        </div>
-      </main>
-    </div>
-  );
-}*/
-
 import {
   BrowserRouter,
   Routes,
@@ -31,6 +8,8 @@ import Ye from "./ywpage";
 import Bl from "./blpage"
 import {TopPage} from "./toppage"
 import SearchTL from './searchtl'
+import {NotFound} from './NotFound'
+import  {ProductPage} from './ProductPage'
 
 const App: React.FC = () => {
   return (
@@ -39,7 +18,8 @@ const App: React.FC = () => {
               <Route path="/" element={<TopPage/>}/>
               <Route path="ywpage" element={<Ye />} />
               <Route path="blpage" element={<Bl />} />
-              <Route path="/searchtl" element={<SearchTL />} />
+              <Route path="not" element={<NotFound />} />
+            <Route path="product" element={<ProductPage />} />
           </Routes>
       </BrowserRouter>
   )

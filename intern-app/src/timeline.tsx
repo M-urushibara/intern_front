@@ -3,7 +3,7 @@ import axios from 'axios';
 import { ImageList, ImageListItem, Button} from '@mui/material';
 import {Listen} from './listen' 
 //json取得部分と表示させる部分を別コンポーネントにしたかった
-
+import { Link } from 'react-router-dom'
 
 
 type Post = {
@@ -28,7 +28,7 @@ export const TimeLine = () => {
        <ImageList sx={{ width: 1, height: 1}} cols={3}>
          {datas.map((data :Post,index) => (
           <ImageListItem key={data.article_id} style={{ margin:"10%"}}>
-            <a href=''> <img  className="img" style={{width:"100%"}} src={data.product_image_path}/> </a>
+            <Link to="/product"> <img  className="imge" style={{width:"100%"}} src={data.product_image_path}/> </Link>
           </ImageListItem>
          ))}
       </ImageList>
