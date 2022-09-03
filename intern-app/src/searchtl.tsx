@@ -12,8 +12,8 @@ type Post = {
   created_at:string;
 } 
 
-export const TimeLine = () => {
-  const urlAPI = 'http://localhost:3001/articles/timeline/recommend';
+const SearchTL:React.FC = (props) => {
+  const urlAPI = 'http://localhost:3001/articles/search/{props.}';
    const [datas, setDatas] = useState([]);
    console.log(axios.defaults.baseURL)
    useEffect( () => {
@@ -35,3 +35,4 @@ export const TimeLine = () => {
      </div>
    );
 }
+export default SearchTL

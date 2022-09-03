@@ -9,7 +9,7 @@ export const Search = () =>{
     <div >
       <form method="get" action="#" className="search_container">
         <input type="text"  value={text} placeholder="　キーワード検索" onChange={(event) => setText(event.target.value)}/>
-        <Link to="/ywpage"><input type="submit" value="検索"/></Link>
+        <Link to="/searchtl"><input type="submit" value="検索"/></Link>
       </form>
     </div>
   );

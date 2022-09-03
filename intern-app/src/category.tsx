@@ -6,10 +6,6 @@ import './App.css'
 
 
   const Category: React.FC = () =>{
-
-    const c = {
-      textDecoration: 'underline'
-    };
   
     return(
       <div>
