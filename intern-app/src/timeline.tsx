@@ -10,8 +10,6 @@ type Post = {
   article_id:number;
   product_image_path:string;
   created_at:string;
-  /*id:number;
-  url:string;*/
 } 
 
 export const TimeLine = () => {

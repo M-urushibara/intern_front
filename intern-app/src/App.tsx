@@ -1,10 +1,11 @@
 import React from 'react';
-import {TimeLine} from './components/timeline'
-import {Header} from './components/header'
-import {Sidemenue} from './components/sidemenue'
-import './components/App.css'
+import {TimeLine} from './timeline'
+import {Header} from './header'
+import {Sidemenue} from './sidemenue'
+import './App.css'
 
-export const App = () =>{
+
+/*export const App = () =>{
   return (
     <div >
         <Header/>
@@ -18,4 +19,30 @@ export const App = () =>{
       </main>
     </div>
   );
+}*/
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom'
+import Ye from "./ywpage";
+import Bl from "./blpage"
+import {TopPage} from "./toppage"
+
+const App: React.FC = () => {
+  return (
+      <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<TopPage/>}/>
+              <Route path="ywpage" element={<Ye />} />
+              <Route path="blpage" element={<Bl />} />
+              //<Route path="blpage" element={<Bl />} />
+          </Routes>
+      </BrowserRouter>
+  )
 }
+
+export default App
+
+

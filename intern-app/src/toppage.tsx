@@ -1,8 +1,8 @@
 import React from 'react';
-import {TimeLine} from './components/timeline'
-import {Header} from './components/header'
-import {Sidemenue} from './components/sidemenue'
-import './components/App.css'
+import {TimeLine} from './timeline'
+import {Header} from './header'
+import {Sidemenue} from './sidemenue'
+
 
 export const TopPage = () =>{
   return (

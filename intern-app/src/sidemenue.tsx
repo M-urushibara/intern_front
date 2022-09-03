@@ -1,6 +1,6 @@
 import React from 'react';
 import {Search} from './search'
-import {Category} from './category'
+import Category from './category'
 import {User} from './user'
 import './App.css'
 
